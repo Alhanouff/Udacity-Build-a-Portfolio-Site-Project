@@ -1,0 +1,187 @@
+body {
+    font-family: "Exo 2", sans-serif;
+    color: #2d3c49;
+}
+
+header,
+main,
+footer {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/*** Header styling ***/
+
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.logo-image {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.logo-image img {
+    width: 85px;
+    height: 85px;
+}
+
+.header-text {
+    font-weight: 200;
+    text-align: right;
+}
+
+.header-text h1 {
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    margin-top: 0;
+}
+
+
+/*** Content styling ***/
+
+.jumbotron-section {
+    display: grid;
+    margin-bottom: 15px;
+}
+
+.jumbotron-img {
+    margin: 0;
+}
+
+.jumbotron-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px 15px;
+}
+
+.main-content h2 {
+    grid-column: 1 / 4;
+    color: #7d97ad;
+    font-weight: 400;
+}
+
+.portfolio-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-link a {
+    border: 1px solid #2d3c49;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.portfolio-link a:hover,
+.portfolio-link a:active {
+    text-decoration: none;
+    background-color: rgba(3, 137, 253, 0.1);
+}
+
+.img-attribution {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+
+/*** Footer styling ***/
+
+footer {
+    text-align: center;
+    border-top: 1px solid #7d97ad;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+footer p:nth-child(2) {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.octocat-icon,
+.octocat-icon a,
+.octocat-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*** Responsive stylings ***/
+
+@media screen and (min-width: 850px) {
+    header,
+    main,
+    footer {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .header-text h1 {
+        font-size: 1.7em;
+    }
+
+    .main-content {
+        grid-template-columns: 75%;
+        justify-content: space-evenly;
+    }
+
+    .main-content h2 {
+        grid-column: auto;
+        text-align: center;
+    }
+
+    .portfolio-section h3 {
+        margin-top: 5px;
+    }
+
+    .portfolio-link {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .portfolio-link a {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
