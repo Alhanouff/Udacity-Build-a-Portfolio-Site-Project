@@ -23,6 +23,7 @@ header {
     margin-bottom: 25px;
     border-bottom: 3px solid #7d97ad;
 }
+
 .logo-image {
     text-align: left;
     padding: 10px 0;
@@ -50,7 +51,6 @@ header {
 
 
 /*** Content styling ***/
-
 .jumbotron-section {
     display: grid;
     margin-bottom: 15px;
