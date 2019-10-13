@@ -15,6 +15,7 @@ footer {
 
 /*** Header styling ***/
 
+
 header {
     display: grid;
     grid-template-columns: auto auto;
@@ -22,7 +23,6 @@ header {
     margin-bottom: 25px;
     border-bottom: 3px solid #7d97ad;
 }
-
 .logo-image {
     text-align: left;
     padding: 10px 0;
